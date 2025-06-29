@@ -7,11 +7,11 @@ export async function generateMetadata(props: {
   const { locale } = await props.params;
   const t = await getTranslations({
     locale,
-    namespace: 'Dashboard',
+    namespace: 'Demo',
   });
 
   return {
-    title: t('meta_title'),
+    title: t('alo'),
   };
 }
 

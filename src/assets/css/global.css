@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+@import './theme.css';
+
+
+body {
+  /* font-family: 'Roboto', ui-sans-serif, system-ui, sans-serif; */
+}
+
+.text-h1 {
+  font-size: var(--text-5xl, 3rem);
+  font-weight: var(--text-bold, 800);
+  line-height: var(--lh-5xl, 3.5rem);
+  letter-spacing: -0.01em;
+}
+
+.text-h2 {
+  font-size: var(--text-3xl, 2.25rem);
+  font-weight: var(--text-semi-bold, 600);
+  line-height: var(--lh-3xl, 2.5rem);
+  letter-spacing: -0.01em;
+}
+
+.text-h3 {
+  font-size: var(--text-1xl, 1.5rem);
+  font-weight: var(--text-semi-bold, 600);
+  line-height: var(--lh-1xl, 2rem);
+  letter-spacing: -0.01em;
+}
+
+.text-h4 {
+  font-size: var(--text-xl, 1.25rem);
+  font-weight: var(--text-semi-bold, 800);
+  line-height: var(--lh-xl, 1.75rem);
+  letter-spacing: -0.01em;
+}
+
+.text-h5 {
+  font-size: var(--text-md, 1rem);
+  font-weight: var(--text-default, 400);
+  line-height: var(--lh-md, 1.2);
+  letter-spacing: -0.01em;
+}
+
+.text-h5 {
+  font-size: var(--text-sm, 1rem);
+  font-weight: var(--text-default, 400);
+  line-height: var(--lh-sm, 1.2);
+  letter-spacing: -0.01em;
+}

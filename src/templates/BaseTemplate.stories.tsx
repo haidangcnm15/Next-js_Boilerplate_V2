@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/test';
 import { NextIntlClientProvider } from 'next-intl';
-import messages from '@/locales/en.json';
+import messages from '@/assets/locales/en/Common.json';
 import { BaseTemplate } from './BaseTemplate';
 
 const meta = {

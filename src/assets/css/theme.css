@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* spacing */
+  --spacing: 4px;
+
+  /* 1rem = 16px default */
+  /* text */
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-md: 1rem;      /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;  /* 20px */
+  --text-1xl: 1.5rem;  /* 24px */
+  --text-2xl: 1.75rem;  /* 28px */
+  --text-3xl: 2.25rem;  /* 36px */
+  --text-4xl: 2.5rem;  /* 40px */
+  --text-5xl: 3rem;  /* 48px */
+  
+  --lh-xs: 1.125rem;   /* 1.5 */
+  --lh-sm: 1.25rem;  /* 1.43 */
+  --lh-md: 1.5rem;      /* 1.5 */
+  --lh-lg: 1.75rem;  /* 1.56 */
+  --lh-xl: 1.75rem;  /* 1.4 */
+  --lh-1xl: 2rem;  /* 1.33 */
+  --lh-2xl: 2.25rem;  /* 1.29 */
+  --lh-3xl: 2.5rem;  /* 1.25 */
+  --lh-4xl: 3rem;  /* 1.2 */
+  --lh-5xl: 3.5rem;  /* 1.17 */
+
+  --text-thin: 300;
+  --text-default: 400;
+  --text-medium: 500;
+  --text-semi-bold: 600;
+  --text-bold: 700;
+  --text-extra-bold: 800;
+
+  --color-black: #0A0A0A;
+  --color-error: #ef4444;
+  --color-black: #0A0A0A;
+  --color-dang: #ef4444;
+  --color-dang-ak: #ef4;
+}

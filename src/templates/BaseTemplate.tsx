@@ -1,5 +1,5 @@
+import { I18nConfig } from '@/libs/next-intl/I18nConfigs';
 import { useTranslations } from 'next-intl';
-import { AppConfig } from '@/utils/AppConfig';
 
 export const BaseTemplate = (props: {
   leftNav: React.ReactNode;
@@ -14,7 +14,7 @@ export const BaseTemplate = (props: {
         <header className="border-b border-gray-300">
           <div className="pb-8 pt-16">
             <h1 className="text-3xl font-bold text-gray-900">
-              {AppConfig.name}
+              {I18nConfig.name}
             </h1>
             <h2 className="text-xl">{t('description')}</h2>
           </div>
@@ -37,7 +37,7 @@ export const BaseTemplate = (props: {
         <main>{props.children}</main>
 
         <footer className="border-t border-gray-300 py-8 text-center text-sm">
-          {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
+          {`© Copyright ${new Date().getFullYear()} ${I18nConfig.name}. `}
           {t.rich('made_with', {
             author: () => (
               <a
