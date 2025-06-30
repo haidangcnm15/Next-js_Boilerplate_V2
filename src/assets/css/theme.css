@@ -1,35 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  /* spacing */
-  --spacing: 4px;
-
+@theme {
   /* 1rem = 16px default */
-  /* text */
-  --text-xs: 0.75rem;   /* 12px */
-  --text-sm: 0.875rem;  /* 14px */
-  --text-md: 1rem;      /* 16px */
-  --text-lg: 1.125rem;  /* 18px */
-  --text-xl: 1.25rem;  /* 20px */
-  --text-1xl: 1.5rem;  /* 24px */
-  --text-2xl: 1.75rem;  /* 28px */
-  --text-3xl: 2.25rem;  /* 36px */
-  --text-4xl: 2.5rem;  /* 40px */
-  --text-5xl: 3rem;  /* 48px */
-  
-  --lh-xs: 1.125rem;   /* 1.5 */
-  --lh-sm: 1.25rem;  /* 1.43 */
-  --lh-md: 1.5rem;      /* 1.5 */
-  --lh-lg: 1.75rem;  /* 1.56 */
-  --lh-xl: 1.75rem;  /* 1.4 */
-  --lh-1xl: 2rem;  /* 1.33 */
-  --lh-2xl: 2.25rem;  /* 1.29 */
-  --lh-3xl: 2.5rem;  /* 1.25 */
-  --lh-4xl: 3rem;  /* 1.2 */
-  --lh-5xl: 3.5rem;  /* 1.17 */
+  /* Font sizes| rem*/
+  /* Line heights| rem*/
+  /* Padding/Margin| rem*/
+  /* Container widths| rem*/
+  /* Component spacing| rem*/
+  /* Borders| px*/
+  /* Box shadows| px*/
+  /* Icon dimensions| px*/
+  /* Breakpoints| px*/
+  /* Focus outlines| px*/
 
+  /* Spacing scale - REM */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+
+  /* text - REM*/
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-md: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-1xl: 1.5rem; /* 24px */
+  --text-2xl: 1.75rem; /* 28px */
+  --text-3xl: 2.25rem; /* 36px */
+  --text-4xl: 2.5rem; /* 40px */
+  --text-5xl: 3rem; /* 48px */
+
+  /* text line-height - REM*/
+  --lh-xs: 1.125rem; /* 1.5 */
+  --lh-sm: 1.25rem; /* 1.43 */
+  --lh-md: 1.5rem; /* 1.5 */
+  --lh-lg: 1.75rem; /* 1.56 */
+  --lh-xl: 1.75rem; /* 1.4 */
+  --lh-1xl: 2rem; /* 1.33 */
+  --lh-2xl: 2.25rem; /* 1.29 */
+  --lh-3xl: 2.5rem; /* 1.25 */
+  --lh-4xl: 3rem; /* 1.2 */
+  --lh-5xl: 3.5rem; /* 1.17 */
+
+  /* font weight */
   --text-thin: 300;
   --text-default: 400;
   --text-medium: 500;
@@ -37,9 +53,53 @@
   --text-bold: 700;
   --text-extra-bold: 800;
 
-  --color-black: #0A0A0A;
+  /* Colors */
+  --color-black: #0a0a0a;
   --color-error: #ef4444;
-  --color-black: #0A0A0A;
-  --color-dang: #ef4444;
-  --color-dang-ak: #ef4;
+
+  /* Gray Scale */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+
+  /* Primary Brand Colors */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  /* Fixed sizes - PX */
+  --border-width: 1px;
+  --border-width-2: 2px;
+  --border-width-4: 4px;
+
+  /* Icon sizes - PX */
+  --icon-xs: 12px;
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+
+  /* Shadows - PX */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+
+  /* Border radius - có thể mix */
+  --radius-sm: 2px; /* Small radius - px for precision */
+  --radius-md: 0.25rem; /* Medium radius - rem for scaling */
+  --radius-lg: 0.5rem; /* Large radius - rem for scaling */
 }

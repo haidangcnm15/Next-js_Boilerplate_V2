@@ -1,16 +1,15 @@
 'use client';
 
-
-interface ButtonProps {
+type ButtonProps = {
   label: string;
-  // eslint-disable-next-line no-unused-vars
+
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
   outline?: boolean;
   small?: boolean;
   icon?: any;
   isLoading?: boolean;
-}
+};
 
 const Button: React.FC<ButtonProps> = ({
   label,

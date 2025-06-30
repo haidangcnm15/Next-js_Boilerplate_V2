@@ -11,7 +11,7 @@ export const I18nConfig = {
   locales: LIST_LANGUAGES,
   defaultLocale: DEFAULT_LANGUAGE,
   localePrefix,
-  defaultNs: DEFAULT_NS
+  defaultNs: DEFAULT_NS,
 };
 
 const supportedLocales: Record<string, LocalizationResource> = {

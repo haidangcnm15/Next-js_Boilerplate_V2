@@ -1,3 +1,3 @@
-export * from "./defaultConfigs";
-export * from "./regex";
-export * from "./colors";
+export * from './colors';
+export * from './defaultConfigs';
+export * from './regex';

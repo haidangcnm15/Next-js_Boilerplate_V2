@@ -1,5 +1,5 @@
-import { I18nConfig } from '@/libs/next-intl/I18nConfigs';
 import { useTranslations } from 'next-intl';
+import { I18nConfig } from '@/libs/next-intl/I18nConfigs';
 
 export const BaseTemplate = (props: {
   leftNav: React.ReactNode;

@@ -1,1 +1,1 @@
-export const linkRegex = /(https?:\/\/[^\s]+)/g;
+export const linkRegex = /(https?:\/\/\S+)/g;

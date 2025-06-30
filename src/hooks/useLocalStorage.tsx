@@ -1,13 +1,10 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
-
 'use client';
 
 import { useEffect, useState } from 'react';
 
 export const useLocalStorage = <T,>(
   key: string,
-  initialValue: T
+  initialValue: T,
 ): [T, (value: T | ((prop: T) => T)) => void] => {
   const [storedValue, setStoredValue] = useState<T>(initialValue);
 
@@ -21,8 +18,8 @@ export const useLocalStorage = <T,>(
 
   const setValue = (value: T | ((prop: T) => T)) => {
     try {
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
+      const valueToStore
+        = typeof value === 'function' ? value(storedValue) : value;
 
       setStoredValue(valueToStore);
       if (typeof window !== 'undefined') {

@@ -1,6 +1,6 @@
 {
-  "Common":{
-    "alo":"Hello Vietnam"
+  "Common": {
+    "alo": "Hello Vietnam"
   },
   "RootLayout": {
     "home_link": "Home",
@@ -75,7 +75,7 @@
     "user_profile_link": "Manage your account",
     "sign_out": "Sign out"
   },
-  "Demo":{
-    "alo":"Hello"
+  "Demo": {
+    "alo": "Hello"
   }
 }
